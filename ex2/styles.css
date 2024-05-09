@@ -1,0 +1,144 @@
+
+.hook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    margin: 10px;
+}
+input[type="radio"]:checked + span {
+    color: blue; 
+  }
+.owner{
+    position: relative;
+    margin: 30px; 
+
+}
+
+
+.required:after {
+    content: " *";
+    color: red;
+  }
+
+/* ------------------- */
+ form .input-box{
+    width: -webkit-fill-available;
+    /* width: fit-content; */
+    border-width: 0px 0px 2px 0px;
+    border-style: groove;
+    margin-top: 30px;
+    position: relative;
+    /* color: white; */
+}
+form .input-box input{
+    width: -webkit-fill-available;    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 7px 0px;
+    /* color: #000; */
+}
+form .input-box input[type="date"]{
+    max-width: 31%;
+    max-height: 31px;
+    float:inline-end;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 7px 0px;
+    /* position: absolute !important; */
+    /* right: 0 !important; */
+    /* color: #000; */
+}
+ form .input-box label{
+    position: absolute;
+    left: 10px;
+    font-size: 15px;
+    top: 8px;
+    pointer-events: none;
+    transition: 0.2s;
+}
+/* ---floating--- */
+ form .input-box input:focus + label,
+ form .input-box input:valid + label:not(.exclude){
+    top: -15px;
+    font-size: 18px;
+    color: blue;
+}
+/* -------------------------- */
+form .select-box{
+    width: -webkit-fill-available;
+    border-width: 0px 0px 2px 0px;
+    border-style: groove;
+    margin-top: 8px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+form .select-box select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 7px 0px;
+}
+form .select-box .float-label{
+    top: -15px;
+    font-size: 18px;
+    color: blue;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .mx-10{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid #BBB5B5;
+    border: none;
+    border-radius:6px;
+   
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  form {
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 4px 4px 8px #BBB5B5;
+  }
+  
+  .form-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:inline-end;
+    position: relative;
+    top: -60px;
+    right: 30px;
+}
+.reset-icon{
+    width: 48px;
+    height: 48px;
+    background: url('icons/reset-icon.png') no-repeat;
+}
+.check-icon{
+    width: 48px;
+    height: 48px;
+    background: url('icons/checkmarks.png') no-repeat;
+}
+  
+  label {
+    margin-right: 10px;
+  }
+  

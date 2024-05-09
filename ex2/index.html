@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulaire</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body onload="toggleForm()">
+    <form>
+        <div class="owner">
+            <span>DEMANDEUR</span>
+            <hr>
+        </div>
+        <div class="hook">
+            <input type="radio" name="personType" value="physique" checked onchange="toggleForm()"/>
+            <span class="space">PERSONNE PHYSIQUE</span>
+            <input type="radio" name="personType" value="morale" onchange="toggleForm()"/>
+            <span class="space">PERSONNE MORALE</span>
+        </div>
+      <div id="physique" style="margin: 20px;">
+        <div class="row">
+            <div class="select-box mx-10">
+                <label class="float-label required">Civilité</label>
+                <select class="physique" required>
+                    <option value="madame" selected>MADAME</option>
+                    <option value="monsieur">MONSIEUR</option>
+                </select>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Nom</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Prénom</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Nom du père</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Nom de la mère</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">CIN/Passeport/Titre de séjour</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="date" class="physique" required>
+                <label class="required">Date fin de validité pièce identité</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Lieu délivrance pièce d’identité</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="select-box mx-10">
+                <label for="nationality" class="float-label required">Nationalité</label>
+                <select name="pays" class="physique" required>
+                    <option value="maroc" selected>Maroc</option>
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="tunisie">Tunisie</option>
+                    <option value="egypte">Egypte</option>
+                  </select>
+            </div>
+            <div class="input-box mx-10">
+                <input type="date" class="physique" required>
+                <label class="required">Date Naissance</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Lieu Naissance</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text">
+                <label class="exclude">Profession</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" name="telephone" required>
+                <label class="required">Téléphone</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text" name="email">
+                <label  class="exclude">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text" class="physique" required>
+                <label class="required">Adresse</label>
+            </div>
+            <div class="select-box mx-10">
+                <label for="ville" class="float-label required">Ville</label>
+                <select name="ville" class="physique" required>
+                    <option value="casablanca" selected>Casablanca</option>
+                    <option value="rabat">Rabat</option>
+                    <option value="marrakech">Marrakech</option>
+                    <option value="tanger">Tanger</option>
+                    <option value="fes">Fes</option>
+                </select>
+        
+            </div>
+            <div class="select-box mx-10">
+                <label for="pays" class="float-label required">Pays</label>
+                <select name="pays"  class="physique" required>
+                    <option value="maroc" selected>Maroc</option>
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="tunisie">Tunisie</option>
+                    <option value="egypte">Egypte</option>
+                  </select>
+            </div>
+        </div>
+      </div>
+
+      <div id="morale" style="margin: 20px;">
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text"  class="morale" required>
+                <label class="required">Raison Sociale</label>
+            </div>
+            <div class="input-box mx-10">
+                <input type="text"  class="morale" required>
+                <label class="required">RC/ICE</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-box mx-10">
+                <input type="text"  class="morale" required>
+                <label class="required">Adresse</label>
+            </div>
+            <div class="select-box mx-10">
+                <label for="ville" class="float-label required">Ville</label>
+                <select name="ville"  class="morale" required>
+                    <option value="casablanca" selected>Casablanca</option>
+                    <option value="rabat">Rabat</option>
+                    <option value="marrakech">Marrakech</option>
+                    <option value="tanger">Tanger</option>
+                    <option value="fes">Fes</option>
+                </select>
+        
+            </div>
+            <div class="select-box mx-10">
+                <label for="pays" class="float-label required">Pays</label>
+                <select name="pays"  class="morale" required>
+                    <option value="maroc" selected>Maroc</option>
+                    <option value="france">France</option>
+                    <option value="espagne">Espagne</option>
+                    <option value="italie">Italie</option>
+                    <option value="tunisie">Tunisie</option>
+                    <option value="egypte">Egypte</option>
+                  </select>
+            </div>
+        </div>
+      </div>
+    
+
+       
+
+      <br /><br />
+      <div id="error-message" style="display: none; color: red">
+        Veuillez remplir tous les champs et vérifier que les champs Téléphone et
+        Email sont valides.
+      </div>
+      <div id="success-message" style="display: none; color: green">
+        Formulaire valide.
+      </div>
+      <br /><br />
+      <div class="form-action">
+        <button style="background-color: white; margin-right: 20px;" onclick="resetForm()">
+            <div class="reset-icon"></div>
+            <span style="color: #BBB5B5; ">Réinitialiser</span>
+        </button>
+      <button type="submit" style="background-color: white; color:#63db65; height: 49px; width: 120px;" onclick="return checkForm()" >
+        <div class="check-icon"></div>
+        <span>Valider</span>
+    </button>
+      </div>
+    </form>
+  </body>
+</html>
